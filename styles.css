@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #87d3ff96;
+}
+
+header img {
+    width: 90px;
+    margin: 15px 0 10px 20px;
+}
+
+header #pesquisa {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+}
+
+header #busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+header #busca input {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #868686;
+    font-size: 24px;
+    background-image: url(./images/aviao-de-papel.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: right;
+    background-position-y: center;
+    padding-left: 20px;
+}
+
+header #busca p {
+    width: 20%;
+    font-size: 24px;
+    font-weight: 700;
+    color: #303030fa;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 10px 0 10px
+}
+
+header #filtro p {
+    width: 26%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #303030fa;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 10px 0 10px
+}
+
+header #filtro {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    border: solid 2px;
+    border-radius: 5px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+header #filtro img {
+    width: 35px;
+    margin: 0 10px 0 10px;
+}
+
+main #banner {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+   }
+   
+   main #banner p{
+       font-size: 24px;
+       font-family: 'Roboto', sans-serif;
+       margin-bottom: 10px;
+       color: #323232;
+       font-weight: 700;
+   }
+   
+   main #banner img {
+       width: 100%;
+       max-height: 400px;
+   }
+   
+   main #banner #pedido{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: -80px 60px 0 60px;
+       
+       z-index: 2;
+   
+   }
+   
+   main #banner #pedido #promocao p {
+       color: rgb(221, 219, 219);
+       max-width: 200px;
+   }
+   main #banner #pedido button{
+       background-color: #8bd1ffc4;
+       min-height: 60px ;
+       min-width: 160px;
+       border-radius: 5px;
+       border: 0;
+       color: rgb(221, 219, 219);
+       font-weight: 700;
+       font-size: 24px; 
+       
+       transition: 0.3s;
+   }
+   main #banner #pedido button:hover, header #filtro:hover{
+       cursor: pointer;
+       background: #91d5fda1;
+   }
+
+   main #conteudo{
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+main #conteudo #titulo{
+    font-size: 24px;
+    color: #323232;
+    font-weight: 700;
+    padding-bottom: 10px;
+    font-family: 'Roboto',sans-serif;
+}
+
+main #conteudo #produto {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+main #conteudo #produto .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 48%;
+    height: 160px;
+    border: solid 2px #323232;
+    border-radius: 5px;
+
+    margin: 5px 5px 5px;
+
+}
+
+main #conteudo #produto .card img{
+    min-width: 200px;
+    height: 100%;
+    border: solid 2px #323232;
+
+}
+
+main #conteudo #produto .card .item{
+    margin: 0 5px 0 10px;
+}
+
+main #conteudo #produto .card .item p{
+    font-family: 'Roboto', sans-serif;
+    color: #181818;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px 0 ;
+}
+
+main #conteudo #produto .card .item .descricao{
+    font-weight: 500;
+}
+
+main #conteudo #produto .card .valor-qtd{
+    margin: auto 10px;
+    font-weight: 500;
+    font-family: 'Roboto' , sans-serif;
+
+}
+
+main #conteudo #produto .card .valor-qtd .qtd button{
+    width: 90px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: #8bd1ffc4;
+    cursor: pointer;
+    color: #181818;
+    border: solid 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #87d3ff96;
+}
+
+footer img {
+    width: 130px;
+}
+
+footer #links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #links img {
+    width: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+footer #compra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #181818;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer #compra img {
+    width: 40px;
+    margin: 15px 0;
+}
+
+footer #compra #pedir,
+footer #compra #cadastrar {
+    border: 0;
+    border-radius: 5px;
+    height: 60px;
+    width: 200px;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer #compra #pedir {
+    background: #000000;
+}
+
+footer #compra #pedir:hover {
+    background: #1d1d1d;
+}
+
+footer #compra #cadastrar {
+    background: #00be00;
+}
+
+footer #compra #cadastrar:hover {
+    background: #639463;
+}
+
+footer #compra input {
+    width: 100%;
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: #000000;
+    font-size: 24px;
+    background-image: url(./assets/email.svg);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+footer #links {
+    margin: 2%;
+}
+
+footer #logoimg {
+    margin: 2%;
+}
+ 
+button {
+    transition: transform 0.5s;
+    transform: translateX(0) scale(0.5);
+
+  }
+  
+  button:hover, button:focus {
+
+    transform: translateX(5px) scale(1);
+    
+  }
+
+footer #cadastraremail input {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 0;
+    color: #868686;
+    font-size: 24px;
+    background-size: 40px;
+    background-position-x: right;
+    background-position-y: center;
+    padding-left: 20px;
+}
